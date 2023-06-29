@@ -1,15 +1,16 @@
 #include "main.h"
 /**
- * _puts - returns strings of characters.
+ * _puts - returns a string of parameter
  * @s: The string value to print
  * Return: The number of characters.
  */
 int _puts(char *s)
 {
-	int j = 0;
+	int n = 0;
 
-	while (s[j])
-		_putchar(s[j++]);
+	while (s[n])
+		_putchar(s[n++]);
 
-	return (j);
+	return (n);
 }
+
