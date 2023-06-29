@@ -1,4 +1,4 @@
-#include "main.h"
+i#include "main.h"
 /**
  * convert_bin - returns  an unsigned integer to binary
  * @b: Int to convert
@@ -57,5 +57,5 @@ void convert_hex(unsigned long int a, int b, int *c)
 	if (j <= 9)
 		*c = *c +  _putchar(j + '0');
 	else
-		*c = *c + _putchar((j - 10) + (less ? 'a' : 'A'));
+		*c = *c + _putchar((j - 10) + (b ? 'a' : 'A'));
 }
