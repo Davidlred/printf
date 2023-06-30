@@ -15,6 +15,6 @@ int format_u(va_list list, format_info info)
 	else
 		n = va_arg(list, unsigned int);
 
-	return (print_unsigned_int(n));
+	return (print_unsigned_integer(n));
 }
 

@@ -47,7 +47,7 @@ int width_flag(format_info *info, const char *s, int n)
 	while (is_digit(s[n]))
 	{
 		d = s[i] - 48;
-		w = w +  _pow(10, --c) * d;
+		w = w +  power(10, --c) * d;
 		n++;
 	}
 

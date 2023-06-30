@@ -34,6 +34,6 @@ int format_d_i(va_list list, format_info info)
 	if (info.space && n >= 0)
 		count = count + _putchar(info.space);
 
-	count = count + print_int(n);
+	count = count + print_integer(n);
 	return (count);
 }

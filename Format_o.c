@@ -20,7 +20,7 @@ int format_o(va_list list, format_info info)
 		length = length + 1;
 	if (info.width_specifier)
 	{
-		length = length + get_int_length(n, 8);
+		length = length + _strlen(n, 8);
 		if (length < info.width_specifier)
 		{
 			length = info.width_specifier - length;

@@ -1,11 +1,11 @@
 #include "main.h"
 #include <limits.h>
 /**
- * prints_integer - prints out an int
+ * print_integer - prints out an int
  * @n: integer to be  printed
  * Return: void
  */
-int prints_integer(long int n)
+int print_integer(long int n)
 {
 	int dig;
 	int length = 0;
