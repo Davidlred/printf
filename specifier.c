@@ -2,11 +2,11 @@
 /**
  * information - Fill flag details
  * @info: The info object
- * @flag: a flag to swtich values
+ * @flag_holder: a flag to swtich values
  */
-void information(format_info *info, char flag)
+void information(format_info *info, char flag_holder)
 {
-	switch (flag)
+	switch (flag_holder)
 	{
 	case ' ':
 		info->space = ' ';
@@ -47,7 +47,7 @@ int width_flag(format_info *info, const char *s, int n)
 	while (is_digit(s[n]))
 	{
 		d = s[i] - 48;
-		w += _pow(10, --c) * d;
+		w = w +  _pow(10, --c) * d;
 		n++;
 	}
 
